@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hangman</h1>
+    <div id="boxes">
+        <div id="box1">
+            <div id="about">About</div>
+            <div id="word-container">
+                <span id="word">word to guess</span>
+            </div>
+            <div id="alpha-container">
+              <div id="line1" class="lines">
+                <div class="alphabet" id="q">q</div>
+                <div class="alphabet" id="w">w</div>
+                <div class="alphabet" id="e">e</div>
+                <div class="alphabet" id="r">r</div>
+                <div class="alphabet" id="t">t</div>
+                <div class="alphabet" id="y">y</div>
+                <div class="alphabet" id="u">u</div>
+                <div class="alphabet" id="i">i</div>
+                <div class="alphabet" id="o">o</div>
+                <div class="alphabet" id="p">p</div>
+              </div>
+              <div id="line2" class="lines">
+                <div class="alphabet" id="a">a</div>
+                <div class="alphabet" id="s">s</div>
+                <div class="alphabet" id="d">d</div>
+                <div class="alphabet" id="f">f</div>
+                <div class="alphabet" id="g">g</div>
+                <div class="alphabet" id="h">h</div>
+                <div class="alphabet" id="j">j</div>
+                <div class="alphabet" id="k">k</div>
+                <div class="alphabet" id="l">l</div>
+              </div>
+              <div id="line3" class="lines">
+                <div class="alphabet" id="z">z</div>
+                <div class="alphabet" id="x">x</div>
+                <div class="alphabet" id="c">c</div>
+                <div class="alphabet" id="v">v</div>
+                <div class="alphabet" id="b">b</div>
+                <div class="alphabet" id="n">n</div>
+                <div class="alphabet" id="m">m</div>
+              </div>
+            </div>
+            <button id="play">Start playing</button>
+          </div>
+          <div id="container">
+            <div id="right-word"></div>
+          <button id="play-again">Play again</button>
+        </div>
+          <div class="img" id="box2"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
