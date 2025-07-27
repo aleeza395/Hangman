@@ -23,7 +23,7 @@ let playFunction = () => {
     displayed = selected.split("").map(() => "_");
     word.innerHTML = displayed.join(" ");
     if (selected == "train") {
-        about.innerHTML = " Vehicle on rail tracks"
+        about.innerHTML = "Vehicle on rail tracks"
     } else if (selected == "movie") {
         about.innerHTML = "Motion picture for entertainment"
     } else if (selected == "diamond") {
