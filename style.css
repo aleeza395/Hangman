@@ -8,11 +8,12 @@
 h1 {
     text-align: center;
     margin: 20px;
+    color: #22223B;
 }
 
 .img {
-    min-height: 600px;
-    min-width: 500px;
+    height: 500px;
+    width: 400px;
     background-image: url("1.png");
     background-size: contain;
 }
@@ -22,12 +23,6 @@ h1 {
     justify-content: space-around;
     align-items: center;
 }
-
-@media screen and (max-width: 480px) {
-    #boxes {
-        display: block;
-    }
-  }
 
 .alphabet {
     display: inline;
@@ -72,9 +67,15 @@ h1 {
 }
 
 button {
-    padding: 10px;
+    padding: 13px;
     border: none;
     border-radius: 10px;
+    font-size: 17px;
+    background-color: #cdd4d2;
+}
+
+button:hover {
+    background-color: #acaead;
 }
 
 #play-again {
@@ -85,20 +86,48 @@ button {
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    #alpha-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .lines {
-        display: flex;
-    }
-
+@media screen and (max-width: 1020px) {
     #boxes {
-        display: flex;
-        flex-direction: column;
-        height: 50rem;
-        justify-content: space-evenly;
+        display: block;
     }
-}
+    .img {
+        height: 400px;
+        width: 300px;
+        margin-left: 160px;
+    }
+    #container {
+        display: none;
+    }
+  }
+
+@media screen and (max-width: 620px) {
+    .alphabet {
+        margin: 15px;
+        font-size: 25px;
+    }
+    .img {
+        margin-left: 150px;
+    }
+  } 
+
+@media screen and (max-width: 480px) {
+    .alphabet {
+        margin: 10px;
+        font-size: 20px;
+    }
+    .img {
+        margin-left: 80px;
+    }
+  } 
+
+@media screen and (max-width: 360px) {
+    .alphabet {
+        margin: 5px;
+        font-size: 15px;
+    }
+    .img {
+        margin-left: 20px;
+        height: 350px;
+        width: 250px;
+    }
+  } 
