@@ -96,7 +96,10 @@ button:hover {
         margin-left: 160px;
     }
     #container {
-        display: none;
+        height: fit-content;
+    }
+    #play-again {
+        margin: 2rem;
     }
   }
 
